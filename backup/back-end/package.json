@@ -1,0 +1,27 @@
+{
+  "name": "planck-audio",
+  "version": "1.0.0",
+  "description": "planck-audio web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "keywords": [
+    "e-commerce",
+    "web",
+    "app"
+  ],
+  "author": "Amaya Bradley Waka",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "mongoose": "^6.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
