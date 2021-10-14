@@ -5,6 +5,8 @@ const port = 2000 ;
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth');
 const adminRoutes = require('./routes/admin/auth');
+const categoryRoutes = require('./routes/category');
+
 
 
 
@@ -31,19 +33,7 @@ mongoose.connect(
     app.use(express.json());
     app.use('/api', authRoutes);
     app.use('/api', adminRoutes);
-
-// app.get('/', (req, res, next) => {
-//     res.status(200).json({
-//         message: "Server Running"
-//     });
-// });
-
-
-// app.post('/data', (req, res, next) => {
-//     res.status(200).json({
-//         message: req.body
-//     });
-// });
+    app.use('/api', categoryRoutes);
 
 app.listen(port, () => {
   console.log(`Planck-audio listening at port : ${port}`)
